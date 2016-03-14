@@ -34,6 +34,7 @@ public class Utils {
                 if (count == 1) {
                     jsonObject = jsonObject.getJSONObject("results")
                             .getJSONObject("quote");
+                    // We check wheter or not important fields are null before proceeding, to prevent crashing
                     if (!jsonObject.getString("Change").equals("null")) {
                         batchOperations.add(buildBatchOperation(jsonObject));
                     }

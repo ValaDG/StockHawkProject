@@ -26,6 +26,7 @@ import com.sam_chordas.android.stockhawk.touch_helper.ItemTouchHelperViewHolder;
 public class QuoteCursorAdapter extends CursorRecyclerViewAdapter<QuoteCursorAdapter.ViewHolder>
     implements ItemTouchHelperAdapter{
 
+
   private static Context mContext;
   private static Typeface robotoLight;
   //private final OnStartDragListener mDragListener;
@@ -34,6 +35,7 @@ public class QuoteCursorAdapter extends CursorRecyclerViewAdapter<QuoteCursorAda
     super(context, cursor);
     //mDragListener = dragListener;
     mContext = context;
+
   }
 
   @Override
@@ -85,6 +87,8 @@ public class QuoteCursorAdapter extends CursorRecyclerViewAdapter<QuoteCursorAda
   @Override public int getItemCount() {
     return super.getItemCount();
   }
+
+
 
   public static class ViewHolder extends RecyclerView.ViewHolder
       implements ItemTouchHelperViewHolder, View.OnClickListener{
