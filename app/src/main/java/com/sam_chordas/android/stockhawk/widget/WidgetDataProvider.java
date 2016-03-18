@@ -25,6 +25,11 @@ public class WidgetDataProvider implements RemoteViewsService.RemoteViewsFactory
     List<StockObject> stockList = new ArrayList<>();
     StockObject object;
 
+    public WidgetDataProvider(Context mContext, Intent intent) {
+        this.mContext = mContext;
+        this.intent = intent;
+    }
+
     private void initData() {
 
         mCursor = mContext.getContentResolver().query(QuoteProvider.Quotes.CONTENT_URI,
@@ -57,11 +62,6 @@ public class WidgetDataProvider implements RemoteViewsService.RemoteViewsFactory
         }
 
         mCursor.close();
-    }
-
-    public WidgetDataProvider(Context mContext, Intent intent) {
-        this.mContext = mContext;
-        this.intent = intent;
     }
 
     @Override

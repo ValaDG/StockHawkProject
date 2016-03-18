@@ -17,15 +17,13 @@ import java.util.ArrayList;
  */
 public class Utils {
 
-    private static String LOG_TAG = Utils.class.getSimpleName();
-
     public static boolean showPercent = true;
+    private static String LOG_TAG = Utils.class.getSimpleName();
 
     public static ArrayList quoteJsonToContentVals(String JSON) {
         ArrayList<ContentProviderOperation> batchOperations = new ArrayList<>();
         JSONObject jsonObject = null;
         JSONArray resultsArray = null;
-        Log.i(LOG_TAG, "GET FB: " + JSON);
         try {
             jsonObject = new JSONObject(JSON);
             if (jsonObject != null && jsonObject.length() != 0) {

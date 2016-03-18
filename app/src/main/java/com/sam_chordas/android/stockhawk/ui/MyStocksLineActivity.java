@@ -19,8 +19,8 @@ import com.sam_chordas.android.stockhawk.data.QuoteProvider;
 
 public class MyStocksLineActivity extends AppCompatActivity implements android.app.LoaderManager.LoaderCallbacks<Cursor> {
 
-    LineChartView lineView;
     public static final int LOADER_ID = 1;
+    LineChartView lineView;
     String symbol;
 
 
@@ -94,7 +94,7 @@ public class MyStocksLineActivity extends AppCompatActivity implements android.a
 
         }
 
-        data.close();
+
     }
 
     @Override
