@@ -14,7 +14,7 @@
         style="@style/StockSymbolTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
+        android:layout_margin="@dimen/textview_padding_small"
         android:gravity="start|center_vertical"
         tools:text="GOOG" />
 
@@ -24,10 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:layout_margin="3dp"
+        android:layout_margin="@dimen/textview_padding_small"
         android:background="@drawable/percent_change_pill"
-        android:paddingLeft="3dp"
-        android:paddingRight="3dp"
+        android:paddingLeft="@dimen/textview_padding_small"
+        android:paddingRight="@dimen/textview_padding_small"
         tools:text="100%" />
 
 </FrameLayout>
