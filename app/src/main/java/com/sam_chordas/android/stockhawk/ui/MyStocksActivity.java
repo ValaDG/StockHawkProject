@@ -94,6 +94,8 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                     public void onItemClick(View v, int position) {
 
 
+                        // We send the information to the Stock Activity so that it can retrieve
+                        // the correct data from the database
                         Cursor cur = mCursorAdapter.getCursor();
                         cur.moveToPosition(position);
                         String symbol = cur.getString(1);

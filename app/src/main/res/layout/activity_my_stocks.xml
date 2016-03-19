@@ -1,41 +1,38 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fab="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-  <android.support.v7.widget.RecyclerView
-      android:id="@+id/recycler_view"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:contentDescription="@string/stock_hawk_main_activity"
-      />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/stock_hawk_main_activity" />
 
     <android.support.design.widget.FloatingActionButton
-      android:id="@+id/fab"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_gravity="bottom|right"
-      android:layout_margin="16dp"
-      android:src="@drawable/ic_add_white_24dp"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
         android:contentDescription="@string/floating_point_button"
-      fab:fab_colorNormal="@color/material_blue_500"
-      fab:fab_colorPressed="@color/material_blue_600"
-      fab:fab_colorRipple="@color/ripple"
-      fab:fab_shadow="true"
-      fab:fab_type="normal"
-      fab:layout_anchor="recycler_view"
-      fab:layout_anchorGravity="bottom | end"
-      />
+        android:src="@drawable/ic_add_white_24dp"
+        fab:fab_colorNormal="@color/material_blue_500"
+        fab:fab_colorPressed="@color/material_blue_700"
+        fab:fab_colorRipple="@color/ripple"
+        fab:fab_shadow="true"
+        fab:fab_type="normal"
+        fab:layout_anchor="recycler_view"
+        fab:layout_anchorGravity="bottom | end" />
 
     <TextView
         android:id="@+id/recyclerview_empty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_anchor="@+id/recyclerview_view"
-        app:layout_anchorGravity="fill"
         android:gravity="center_horizontal"
-        android:text="@string/empty_list" />
+        android:text="@string/empty_list"
+        app:layout_anchor="@+id/recyclerview_view"
+        app:layout_anchorGravity="fill" />
 
 </FrameLayout>
